@@ -3,9 +3,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    /* Align left */
     padding-top: 60px;
-    /* Offset for header */
 }
 
 .hero-content {
@@ -81,6 +79,10 @@
 .btn-secondary:hover {
     background: rgba(0, 243, 255, 0.1);
     box-shadow: 0 0 20px rgba(0, 243, 255, 0.2);
+}
+
+.nombre {
+    color: white
 }
 
 @keyframes fadeIn {

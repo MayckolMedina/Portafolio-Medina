@@ -13,7 +13,7 @@ function App() {
       <div className="content-wrapper">
         <header className="main-header">
           <nav className="nav-bar">
-            <div className="logo">PORTFOLIO</div>
+            <div className="logo">PORTAFOLIO</div>
             <ul className="nav-links">
               <li><a href="#projects">Proyectos</a></li>
               <li><a href="#skills">Habilidades</a></li>
@@ -30,7 +30,7 @@ function App() {
         </main>
 
         <footer className="footer">
-          <p>&copy; 2024 Creado con React + Vite</p>
+          <p>&copy; 2025 Creado por Medina Enriquez Mayckol</p>
         </footer>
       </div>
     </div>

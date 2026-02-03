@@ -6,11 +6,13 @@
   --bg-secondary: #0f1014;
   --text-primary: #ffffff;
   --text-secondary: #a1a1aa;
-  
-  --accent-primary: #00f3ff; /* Cyan Neon */
-  --accent-secondary: #bc13fe; /* Purple Neon */
+
+  --accent-primary: #00f3ff;
+  /* Cyan Neon */
+  --accent-secondary: #bc13fe;
+  /* Purple Neon */
   --accent-gradient: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
-  
+
   --glass-bg: rgba(255, 255, 255, 0.05);
   --glass-border: rgba(255, 255, 255, 0.1);
   --glass-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -21,7 +23,7 @@
   --text-lg: 2.5rem;
   --text-md: 1.5rem;
   --text-base: 1rem;
-  
+
   /* Transitions */
   --transition-fast: 0.2s ease;
   --transition-smooth: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -47,13 +49,16 @@ body {
 ::-webkit-scrollbar {
   width: 8px;
 }
+
 ::-webkit-scrollbar-track {
   background: var(--bg-primary);
 }
+
 ::-webkit-scrollbar-thumb {
   background: var(--text-secondary);
   border-radius: 4px;
 }
+
 ::-webkit-scrollbar-thumb:hover {
   background: var(--accent-primary);
 }
@@ -66,4 +71,8 @@ a {
 
 ul {
   list-style: none;
+}
+
+html {
+  scroll-behavior: smooth;
 }

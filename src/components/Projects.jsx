@@ -4,24 +4,26 @@ const Projects = () => {
     const projects = [
         {
             id: 1,
-            title: "E-Commerce Futurista",
-            description: "Una tienda online con diseño cyberpunk y carrito de compras en tiempo real.",
-            tech: ["React", "Stripe", "Firebase"],
-            image: "linear-gradient(45deg, #1a1a1a, #2a2a2a)" // Placeholder
+            title: "web-cosmeticos",
+            description: "Una tienda online de constemricos con catalogo incluido.",
+            tech: ["figma", "Node.js", "CSS"],
+            image: 'url("https://api.microlink.io/?url=https://cosmeticos-mu.vercel.app&screenshot=true&embed=screenshot.url', // Placeholder
+            link: "https://cosmeticos-mu.vercel.app/"
         },
         {
             id: 2,
-            title: "Dashboard de Finanzas",
-            description: "Visualización de datos financieros con gráficos interactivos y modo oscuro.",
-            tech: ["Vue", "D3.js", "Node.js"],
-            image: "linear-gradient(45deg, #0f0f0f, #1f1f1f)" // Placeholder
+            title: "Web-Review",
+            description: "Pagina webo demostratica con registro y login .",
+            tech: ["React Native", "MongoDB", "Node.js", "tailwind"],
+            image: 'url("https://api.microlink.io/?url=https://king-review.vercel.app&screenshot=true&embed=screenshot.url")'// Placeholder
         },
         {
             id: 3,
-            title: "App de Gestión de Tareas",
-            description: "Organizador de productividad con drag & drop y sincronización en la nube.",
-            tech: ["React Native", "Redux", "AWS"],
-            image: "linear-gradient(45deg, #222, #333)" // Placeholder
+            title: "Web-Matizados",
+            description: "Una tienda online.",
+            tech: ["React", "Stripe", "MongoDB"],
+            image: `url('https://api.microlink.io/?url=https://matizados-saturno-ten.vercel.app&screenshot=true&embed=screenshot.url')`, // Placeholder
+            link: "https://matizados-saturno-ten.vercel.app/"
         }
     ];
 
@@ -31,7 +33,7 @@ const Projects = () => {
             <div className="projects-grid">
                 {projects.map((project) => (
                     <div key={project.id} className="project-card">
-                        <div className="card-image" style={{ background: project.image }}></div>
+                        <div className="card-image" style={{ backgroundImage: project.image }}></div>
                         <div className="card-content">
                             <h3>{project.title}</h3>
                             <p>{project.description}</p>
@@ -42,7 +44,9 @@ const Projects = () => {
                             </div>
                         </div>
                         <div className="card-overlay">
-                            <button className="view-btn">Ver Demo</button>
+                            <a href={project.link} target="_blank" rel="noopener noreferrer" className="view-btn">
+                                Ver Demo
+                            </a>
                         </div>
                     </div>
                 ))}
